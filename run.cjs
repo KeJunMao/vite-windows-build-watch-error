@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 
 // run vite build --watch
-const vite = spawn('node', [path.resolve(__dirname, 'node_modules/vite/bin/vite.js'), 'build', '--watch']);
+const vite = spawn('node', [path.resolve(__dirname, 'node_modules/vite/bin/vite.js'), 'build', '--watch', '--debug']);
 vite.stdout.pipe(process.stdout)
 vite.stderr.pipe(process.stdout)
 
